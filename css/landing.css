@@ -27,6 +27,8 @@
 
 html {
     scroll-behavior: smooth;
+    overflow-x: hidden;
+    width: 100%;
 }
 
 body {
@@ -37,6 +39,8 @@ body {
     font-weight: 500;
     line-height: 1.7;
     overflow-x: hidden;
+    width: 100%;
+    position: relative;
 }
 
 /* ── SCROLLBAR ── */
@@ -1537,19 +1541,22 @@ footer {
 /* ── RESPONSIVE ── */
 @media(max-width:1024px) {
     nav {
-        grid-template-columns: auto 1fr;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 5vw;
     }
 
     .nav-links {
-        display: none;
+        display: none !important;
     }
 
     .nav-hamburger {
-        display: flex;
+        display: flex !important;
     }
 
     .nav-links.mobile-active {
-        display: flex;
+        display: flex !important;
         position: fixed;
         top: 0;
         left: 0;
@@ -1571,12 +1578,12 @@ footer {
     }
 
     .has-mega:hover .mega-menu {
-        display: none;
-        /* Disable mega menu on touch for now or simplify */
+        display: none !important;
     }
 
-    .nav-cta-secondary {
-        display: none;
+    .nav-cta-secondary,
+    .nav-cta {
+        display: none !important;
     }
 }
 
