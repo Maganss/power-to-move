@@ -3,314 +3,331 @@
 
 <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
     <title>Power to Move — Carregadores EV</title>
     <link
         href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Mono:ital,wght@0,300;0,400;1,300&family=Plus+Jakarta+Sans:wght@300;400;500;600&display=swap"
         rel="stylesheet" />
     <link rel="stylesheet" href="css/landing.css">
+    <style>
+        /* Extra safety for mobile overflow */
+        .page-wrapper {
+            overflow-x: hidden;
+            width: 100%;
+            position: relative;
+        }
+    </style>
 </head>
 
 <body>
+    <div class="page-wrapper">
 
-    <!-- CURSOR -->
-    <div id="cursor"></div>
-    <div id="cursor-ring"></div>
+        <!-- CURSOR -->
+        <div id="cursor"></div>
+        <div id="cursor-ring"></div>
 
-    <!-- NAV -->
-    <nav id="navbar">
-        <a href="index.html" class="logo">
-            <div class="logo-pill">
-                <div class="logo-waves"></div>
-            </div>
-            <div class="logo-text">
-                <div class="logo-brand">
-                    <span>power</span>
-                    <span>to move</span>
+        <!-- NAV -->
+        <nav id="navbar">
+            <a href="index.html" class="logo">
+                <div class="logo-pill">
+                    <div class="logo-waves"></div>
                 </div>
-                <span class="logo-caption">soluções de mobilidade elétrica</span>
-            </div>
-        </a>
-
-        <ul class="nav-links">
-            <li><a href="index.html" class="active">Início</a></li>
-            <li class="has-mega">
-                <a href="produtos.html">
-                    Produtos
-                    <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3">
-                        <path d="M6 9l6 6 6-6" />
-                    </svg>
-                </a>
-                <div class="mega-menu">
-                    <div class="mega-col">
-                        <div class="mega-col-title">EV Home Chargers</div>
-                        <div class="mega-items">
-                            <a href="home-line.html" class="mega-item">
-                                <span class="mega-item-title">Home Line</span>
-                                <span class="mega-item-desc">Simples, seguro e eficiente</span>
-                            </a>
-                            <a href="#" class="mega-item">
-                                <span class="mega-item-title">Mini Pro 2</span>
-                                <span class="mega-item-desc">Inteligente e conectado</span>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="mega-col">
-                        <div class="mega-col-title">EV Business Chargers</div>
-                        <div class="mega-items">
-                            <a href="business-line.html" class="mega-item">
-                                <span class="mega-item-title">Business Line</span>
-                                <span class="mega-item-desc">Gestão de frotas e condomínios</span>
-                            </a>
-                            <a href="fast-charge.html" class="mega-item">
-                                <span class="mega-item-title">Fast Charge</span>
-                                <span class="mega-item-desc">Carregamento ultrarrápido DC</span>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="mega-col">
-                        <div class="mega-col-title">More Products</div>
-                        <div class="mega-items">
-                            <a href="accessories.html" class="mega-item">
-                                <span class="mega-item-title">Cabos & Acessórios</span>
-                                <span class="mega-item-desc">Cabos, adaptadores e suportes</span>
-                            </a>
-                            <a href="#" class="mega-item">
-                                <span class="mega-item-title">Software Solutions</span>
-                                <span class="mega-item-desc">Plataforma de gestão P2M</span>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </li>
-            <li><a href="about-us.html">Sobre Nós</a></li>
-            <li><a href="#footer">Contactos</a></li>
-        </ul>
-
-        <div class="nav-right">
-            <a href="mailto:mail@powertomove.pt" class="nav-cta-secondary">Contacte-nos</a>
-            <a href="#hero" class="nav-cta">Pedido de Proposta</a>
-            <button id="mobile-toggle" class="nav-hamburger" aria-label="Toggle Navigation">
-                <span></span>
-                <span></span>
-                <span></span>
-            </button>
-        </div>
-    </nav>
-
-    <!-- ── HERO ── -->
-    <section id="hero">
-        <canvas id="hero-canvas"></canvas>
-        <div class="hero-vignette"></div>
-        <div class="hero-left-fade"></div>
-
-        <div class="hero-content">
-            <div class="eyebrow" style="justify-content:center;">
-                <span class="eyebrow-line"></span>
-                <span class="eyebrow-text">Mobilidade Eléctrica · Portugal</span>
-                <span class="eyebrow-line"></span>
-            </div>
-            <h1>O futuro é <em>elétrico</em><br />Comece hoje</h1>
-            <p class="hero-sub">Carregadores residenciais e empresariais instalados por especialistas certificados.
-                Energia limpa, tecnologia inteligente.</p>
-            <div class="hero-btns">
-                <a href="#cta-band" class="btn-primary">
-                    <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                        stroke-width="2.5">
-                        <path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z" />
-                    </svg>
-                    Pedir Proposta
-                </a>
-                <a href="#produtos" class="btn-ghost">Ver Produtos →</a>
-            </div>
-        </div>
-
-        <!-- Stats removed per user request -->
-
-        <div class="hero-bottom">
-            <span
-                style="font-family:'DM Mono',monospace;font-size:9px;font-weight:300;color:rgba(255,255,255,.15);letter-spacing:.14em;">©
-                2026 POWER TO MOVE</span>
-            <div class="scroll-hint">
-                <span>Scroll</span>
-                <div class="scroll-track"></div>
-            </div>
-        </div>
-    </section>
-
-    <!-- ── PRODUTOS ── -->
-    <section id="produtos">
-        <div class="produtos-header reveal">
-            <div>
-                <div class="section-tag">Produtos</div>
-                <h2 class="section-title">A nossa <em>Gama</em></h2>
-            </div>
-            <a href="produtos.html" class="btn-ghost reveal reveal-delay-2">Ver todos os produtos →</a>
-        </div>
-
-        <div class="produtos-grid">
-            <div class="produto-card reveal reveal-delay-1">
-                <div class="produto-number">01 / 03</div>
-                <div class="produto-icon">🏠</div>
-                <div class="produto-name">Home Line</div>
-                <p class="produto-desc">Soluções de carregamento para uso residencial diário. Reduza até 8× o tempo de
-                    carregamento face a uma tomada convencional.</p>
-                <a href="home-line.html" class="produto-link">Ver modelos →</a>
-            </div>
-            <div class="produto-card featured reveal reveal-delay-2">
-                <div class="produto-number">02 / 03</div>
-                <div class="produto-icon">🏢</div>
-                <div class="produto-name">Business Line</div>
-                <p class="produto-desc">Carregamento inteligente para condomínios, empresas, espaços comerciais, hotéis
-                    e parques de estacionamento. Gestão partilhada entre vários utilizadores.</p>
-                <a href="business-line.html" class="produto-link">Ver modelos →</a>
-            </div>
-            <div class="produto-card reveal reveal-delay-3">
-                <div class="produto-number">03 / 03</div>
-                <div class="produto-icon">⚡</div>
-                <div class="produto-name">Fast Charge</div>
-                <p class="produto-desc">Carregamento de corrente contínua de 50 a 350 kW. Obtenha até 300 km de
-                    autonomia em apenas 30 minutos.</p>
-                <a href="fast-charge.html" class="produto-link">Ver modelos →</a>
-            </div>
-        </div>
-    </section>
-
-
-    <!-- ── TRUST & QUALITY SECTION ── -->
-    <section id="trust-quality">
-        <div class="trust-header reveal">
-            <div class="section-tag">Confiança e Qualidade</div>
-            <h2 class="section-title">Excelência em cada <em>instalação</em></h2>
-            <p class="section-body">A Power to Move é a sua parceira de confiança para a transição energética,
-                garantindo as melhores soluções de carregamento para qualquer cenário.</p>
-        </div>
-
-        <div class="trust-grid">
-            <div class="trust-item reveal reveal-delay-1">
-                <div class="trust-icon">🛠️</div>
-                <h3 class="trust-h">Instalação Certificada</h3>
-                <p class="trust-p">Parceiros certificados Mota-e com técnicos qualificados em todo o país. Garantimos
-                    máxima segurança e conformidade total com a legislação.</p>
-            </div>
-            <div class="trust-item reveal reveal-delay-2">
-                <div class="trust-icon">💼</div>
-                <h3 class="trust-h">Soluções Versáteis</h3>
-                <p class="trust-p">Desde residências particulares a condomínios e grandes espaços comerciais.
-                    Adaptamos a infraestrutura às suas necessidades específicas.</p>
-            </div>
-            <div class="trust-item reveal reveal-delay-3">
-                <div class="trust-icon">📞</div>
-                <h3 class="trust-h">Acompanhamento Total</h3>
-                <p class="trust-p">Suporte completo desde o levantamento técnico inicial até à assistência pós-venda e
-                    monitorização remota em tempo real.</p>
-            </div>
-        </div>
-    </section>
-
-    <!-- ── APP SECTION ── -->
-    <section id="app-section">
-        <div class="app-inner">
-            <div class="reveal">
-                <div class="section-tag">Aplicações Móveis</div>
-                <h2 class="section-title">Controlo total<br />na palma da <em>mão</em></h2>
-                <ul class="app-feature-list">
-                    <li class="app-feat">
-                        <div class="app-feat-icon">📊</div>
-                        <div>
-                            <div class="app-feat-title">Monitorização em tempo real</div>
-                            <div class="app-feat-desc">Acompanhe cada sessão de carregamento, consumo e custo
-                                directamente na app.</div>
-                        </div>
-                    </li>
-                    <li class="app-feat">
-                        <div class="app-feat-icon">⏱️</div>
-                        <div>
-                            <div class="app-feat-title">Agendamento inteligente</div>
-                            <div class="app-feat-desc">Programe o carregamento nas horas de menor tarifa para poupar na
-                                sua factura de energia.</div>
-                        </div>
-                    </li>
-                    <li class="app-feat">
-                        <div class="app-feat-icon">👥</div>
-                        <div>
-                            <div class="app-feat-title">Gestão partilhada</div>
-                            <div class="app-feat-desc">Ideal para condomínios e empresas — gerencie múltiplos
-                                utilizadores e pontos de carga.</div>
-                        </div>
-                    </li>
-                </ul>
-            </div>
-            <div class="app-phone reveal reveal-delay-2">
-                <img src="images/app-preview.png" alt="Power to Move App Preview">
-            </div>
-        </div>
-    </section>
-
-
-
-
-    <!-- ── FOOTER ── -->
-    <footer id="footer">
-        <div class="footer-grid">
-            <div class="footer-col brand-col">
-                <div class="logo-box footer-logo-box">
-                    <div class="logo-pill">
-                        <div class="logo-waves"></div>
-                    </div>
+                <div class="logo-text">
                     <div class="logo-brand">
                         <span>power</span>
                         <span>to move</span>
                     </div>
+                    <span class="logo-caption">soluções de mobilidade elétrica</span>
                 </div>
-                <p class="footer-proposal">Lideramos o caminho para uma mobilidade sustentável e inteligente. Do
-                    residencial ao ultra-rápido, movemos o seu futuro.</p>
-            </div>
-            <div class="footer-col links-col">
-                <div class="footer-col-title">PAGES</div>
-                <ul class="footer-links">
-                    <li><a href="index.html">Início</a></li>
-                    <li><a href="produtos.html">Produtos</a></li>
-                    <li><a href="about-us.html">Sobre Nós</a></li>
-                    <li><a href="#footer">Contactos</a></li>
-                </ul>
-            </div>
-            <div class="footer-col signup-col">
-                <div class="footer-col-title">STAY UPDATED</div>
-                <p class="footer-signup-text">Gira o seu carregamento com inteligência. Subscreva para novidades.</p>
-                <form class="footer-form">
-                    <input type="email" placeholder="O seu email" required>
-                    <button type="submit">Join</button>
-                </form>
-            </div>
-        </div>
-        <div class="footer-bottom">
-            <span class="footer-copy">© 2026 Power to Move · Todos os direitos reservados.</span>
-            <div class="footer-socials">
-                <a href="#" class="footer-social">
-                    <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
-                        <path
-                            d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z" />
-                    </svg>
-                </a>
-                <a href="#" class="footer-social">
-                    <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
-                        <path
-                            d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" />
-                    </svg>
-                </a>
-                <a href="#" class="footer-social">
-                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                        <rect x="2" y="2" width="20" height="20" rx="5" ry="5" />
-                        <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z" />
-                        <line x1="17.5" y1="6.5" x2="17.51" y2="6.5" />
-                    </svg>
-                </a>
-            </div>
-        </div>
-    </footer>
+            </a>
 
-    <script src="js/landing.js"></script>
+            <ul class="nav-links">
+                <li><a href="index.html" class="active">Início</a></li>
+                <li class="has-mega">
+                    <a href="produtos.html">
+                        Produtos
+                        <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="3">
+                            <path d="M6 9l6 6 6-6" />
+                        </svg>
+                    </a>
+                    <div class="mega-menu">
+                        <div class="mega-col">
+                            <div class="mega-col-title">EV Home Chargers</div>
+                            <div class="mega-items">
+                                <a href="home-line.html" class="mega-item">
+                                    <span class="mega-item-title">Home Line</span>
+                                    <span class="mega-item-desc">Simples, seguro e eficiente</span>
+                                </a>
+                                <a href="#" class="mega-item">
+                                    <span class="mega-item-title">Mini Pro 2</span>
+                                    <span class="mega-item-desc">Inteligente e conectado</span>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="mega-col">
+                            <div class="mega-col-title">EV Business Chargers</div>
+                            <div class="mega-items">
+                                <a href="business-line.html" class="mega-item">
+                                    <span class="mega-item-title">Business Line</span>
+                                    <span class="mega-item-desc">Gestão de frotas e condomínios</span>
+                                </a>
+                                <a href="fast-charge.html" class="mega-item">
+                                    <span class="mega-item-title">Fast Charge</span>
+                                    <span class="mega-item-desc">Carregamento ultrarrápido DC</span>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="mega-col">
+                            <div class="mega-col-title">More Products</div>
+                            <div class="mega-items">
+                                <a href="accessories.html" class="mega-item">
+                                    <span class="mega-item-title">Cabos & Acessórios</span>
+                                    <span class="mega-item-desc">Cabos, adaptadores e suportes</span>
+                                </a>
+                                <a href="#" class="mega-item">
+                                    <span class="mega-item-title">Software Solutions</span>
+                                    <span class="mega-item-desc">Plataforma de gestão P2M</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li><a href="about-us.html">Sobre Nós</a></li>
+                <li><a href="#footer">Contactos</a></li>
+            </ul>
+
+            <div class="nav-right">
+                <a href="mailto:mail@powertomove.pt" class="nav-cta-secondary">Contacte-nos</a>
+                <a href="#hero" class="nav-cta">Pedido de Proposta</a>
+                <button id="mobile-toggle" class="nav-hamburger" aria-label="Toggle Navigation">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </nav>
+
+        <!-- ── HERO ── -->
+        <section id="hero">
+            <canvas id="hero-canvas"></canvas>
+            <div class="hero-vignette"></div>
+            <div class="hero-left-fade"></div>
+
+            <div class="hero-content">
+                <div class="eyebrow" style="justify-content:center;">
+                    <span class="eyebrow-line"></span>
+                    <span class="eyebrow-text">Mobilidade Eléctrica · Portugal</span>
+                    <span class="eyebrow-line"></span>
+                </div>
+                <h1>O futuro é <em>elétrico</em><br />Comece hoje</h1>
+                <p class="hero-sub">Carregadores residenciais e empresariais instalados por especialistas certificados.
+                    Energia limpa, tecnologia inteligente.</p>
+                <div class="hero-btns">
+                    <a href="#cta-band" class="btn-primary">
+                        <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2.5">
+                            <path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z" />
+                        </svg>
+                        Pedir Proposta
+                    </a>
+                    <a href="#produtos" class="btn-ghost">Ver Produtos →</a>
+                </div>
+            </div>
+
+            <!-- Stats removed per user request -->
+
+            <div class="hero-bottom">
+                <span
+                    style="font-family:'DM Mono',monospace;font-size:9px;font-weight:300;color:rgba(255,255,255,.15);letter-spacing:.14em;">©
+                    2026 POWER TO MOVE</span>
+                <div class="scroll-hint">
+                    <span>Scroll</span>
+                    <div class="scroll-track"></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ── PRODUTOS ── -->
+        <section id="produtos">
+            <div class="produtos-header reveal">
+                <div>
+                    <div class="section-tag">Produtos</div>
+                    <h2 class="section-title">A nossa <em>Gama</em></h2>
+                </div>
+                <a href="produtos.html" class="btn-ghost reveal reveal-delay-2">Ver todos os produtos →</a>
+            </div>
+
+            <div class="produtos-grid">
+                <div class="produto-card reveal reveal-delay-1">
+                    <div class="produto-number">01 / 03</div>
+                    <div class="produto-icon">🏠</div>
+                    <div class="produto-name">Home Line</div>
+                    <p class="produto-desc">Soluções de carregamento para uso residencial diário. Reduza até 8× o tempo
+                        de
+                        carregamento face a uma tomada convencional.</p>
+                    <a href="home-line.html" class="produto-link">Ver modelos →</a>
+                </div>
+                <div class="produto-card featured reveal reveal-delay-2">
+                    <div class="produto-number">02 / 03</div>
+                    <div class="produto-icon">🏢</div>
+                    <div class="produto-name">Business Line</div>
+                    <p class="produto-desc">Carregamento inteligente para condomínios, empresas, espaços comerciais,
+                        hotéis
+                        e parques de estacionamento. Gestão partilhada entre vários utilizadores.</p>
+                    <a href="business-line.html" class="produto-link">Ver modelos →</a>
+                </div>
+                <div class="produto-card reveal reveal-delay-3">
+                    <div class="produto-number">03 / 03</div>
+                    <div class="produto-icon">⚡</div>
+                    <div class="produto-name">Fast Charge</div>
+                    <p class="produto-desc">Carregamento de corrente contínua de 50 a 350 kW. Obtenha até 300 km de
+                        autonomia em apenas 30 minutos.</p>
+                    <a href="fast-charge.html" class="produto-link">Ver modelos →</a>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- ── TRUST & QUALITY SECTION ── -->
+        <section id="trust-quality">
+            <div class="trust-header reveal">
+                <div class="section-tag">Confiança e Qualidade</div>
+                <h2 class="section-title">Excelência em cada <em>instalação</em></h2>
+                <p class="section-body">A Power to Move é a sua parceira de confiança para a transição energética,
+                    garantindo as melhores soluções de carregamento para qualquer cenário.</p>
+            </div>
+
+            <div class="trust-grid">
+                <div class="trust-item reveal reveal-delay-1">
+                    <div class="trust-icon">🛠️</div>
+                    <h3 class="trust-h">Instalação Certificada</h3>
+                    <p class="trust-p">Parceiros certificados Mota-e com técnicos qualificados em todo o país.
+                        Garantimos
+                        máxima segurança e conformidade total com a legislação.</p>
+                </div>
+                <div class="trust-item reveal reveal-delay-2">
+                    <div class="trust-icon">💼</div>
+                    <h3 class="trust-h">Soluções Versáteis</h3>
+                    <p class="trust-p">Desde residências particulares a condomínios e grandes espaços comerciais.
+                        Adaptamos a infraestrutura às suas necessidades específicas.</p>
+                </div>
+                <div class="trust-item reveal reveal-delay-3">
+                    <div class="trust-icon">📞</div>
+                    <h3 class="trust-h">Acompanhamento Total</h3>
+                    <p class="trust-p">Suporte completo desde o levantamento técnico inicial até à assistência pós-venda
+                        e
+                        monitorização remota em tempo real.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- ── APP SECTION ── -->
+        <section id="app-section">
+            <div class="app-inner">
+                <div class="reveal">
+                    <div class="section-tag">Aplicações Móveis</div>
+                    <h2 class="section-title">Controlo total<br />na palma da <em>mão</em></h2>
+                    <ul class="app-feature-list">
+                        <li class="app-feat">
+                            <div class="app-feat-icon">📊</div>
+                            <div>
+                                <div class="app-feat-title">Monitorização em tempo real</div>
+                                <div class="app-feat-desc">Acompanhe cada sessão de carregamento, consumo e custo
+                                    directamente na app.</div>
+                            </div>
+                        </li>
+                        <li class="app-feat">
+                            <div class="app-feat-icon">⏱️</div>
+                            <div>
+                                <div class="app-feat-title">Agendamento inteligente</div>
+                                <div class="app-feat-desc">Programe o carregamento nas horas de menor tarifa para poupar
+                                    na
+                                    sua factura de energia.</div>
+                            </div>
+                        </li>
+                        <li class="app-feat">
+                            <div class="app-feat-icon">👥</div>
+                            <div>
+                                <div class="app-feat-title">Gestão partilhada</div>
+                                <div class="app-feat-desc">Ideal para condomínios e empresas — gerencie múltiplos
+                                    utilizadores e pontos de carga.</div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="app-phone reveal reveal-delay-2">
+                    <img src="images/app-preview.png" alt="Power to Move App Preview">
+                </div>
+            </div>
+        </section>
+
+
+
+
+        <!-- ── FOOTER ── -->
+        <footer id="footer">
+            <div class="footer-grid">
+                <div class="footer-col brand-col">
+                    <div class="logo-box footer-logo-box">
+                        <div class="logo-pill">
+                            <div class="logo-waves"></div>
+                        </div>
+                        <div class="logo-brand">
+                            <span>power</span>
+                            <span>to move</span>
+                        </div>
+                    </div>
+                    <p class="footer-proposal">Lideramos o caminho para uma mobilidade sustentável e inteligente. Do
+                        residencial ao ultra-rápido, movemos o seu futuro.</p>
+                </div>
+                <div class="footer-col links-col">
+                    <div class="footer-col-title">PAGES</div>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Início</a></li>
+                        <li><a href="produtos.html">Produtos</a></li>
+                        <li><a href="about-us.html">Sobre Nós</a></li>
+                        <li><a href="#footer">Contactos</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col signup-col">
+                    <div class="footer-col-title">STAY UPDATED</div>
+                    <p class="footer-signup-text">Gira o seu carregamento com inteligência. Subscreva para novidades.
+                    </p>
+                    <form class="footer-form">
+                        <input type="email" placeholder="O seu email" required>
+                        <button type="submit">Join</button>
+                    </form>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <span class="footer-copy">© 2026 Power to Move · Todos os direitos reservados.</span>
+                <div class="footer-socials">
+                    <a href="#" class="footer-social">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                            <path
+                                d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z" />
+                        </svg>
+                    </a>
+                    <a href="#" class="footer-social">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                            <path
+                                d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" />
+                        </svg>
+                    </a>
+                    <a href="#" class="footer-social">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2">
+                            <rect x="2" y="2" width="20" height="20" rx="5" ry="5" />
+                            <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z" />
+                            <line x1="17.5" y1="6.5" x2="17.51" y2="6.5" />
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </footer>
+
+        <script src="js/landing.js"></script>
 </body>
 
 </html>
