@@ -207,3 +207,23 @@ document.querySelectorAll('.modelo-tag').forEach(t => {
         t.classList.add('active');
     });
 });
+// ─── MOBILE MENU TOGGLE ──────────────────────────────────
+const mobileToggle = document.getElementById('mobile-toggle');
+const navLinks = document.querySelector('.nav-links');
+
+if (mobileToggle && navLinks) {
+    mobileToggle.addEventListener('click', () => {
+        mobileToggle.classList.toggle('active');
+        navLinks.classList.toggle('mobile-active');
+        document.body.style.overflow = navLinks.classList.contains('mobile-active') ? 'hidden' : '';
+    });
+
+    // Close menu when clicking a link
+    navLinks.querySelectorAll('a').forEach(link => {
+        link.addEventListener('click', () => {
+            mobileToggle.classList.remove('active');
+            navLinks.classList.remove('mobile-active');
+            document.body.style.overflow = '';
+        });
+    });
+}
