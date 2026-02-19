@@ -505,6 +505,7 @@ nav.scrolled {
     max-width: 650px;
     text-wrap: balance;
     margin: 24px 0 32px;
+    overflow-wrap: break-word;
 }
 
 .hero-btns {
