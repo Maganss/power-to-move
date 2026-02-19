@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sobre Nós | Power to Move</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Mono:ital,wght@0,300;0,400;1,300&family=Plus+Jakarta+Sans:wght@300;400;500;600&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="css/landing.css">
+    <style>
+        /* Specific Styles for About Us */
+        .about-hero {
+            position: relative;
+            height: 60vh;
+            min-height: 400px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            text-align: center;
+            overflow: hidden;
+            background: #000;
+        }
+
+        .about-hero .hero-bg {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            opacity: 0.6;
+            filter: brightness(0.7);
+        }
+
+        .about-hero-content {
+            position: relative;
+            z-index: 2;
+            max-width: 800px;
+            padding: 0 5%;
+            margin: 0 auto;
+        }
+
+        .about-hero h1 {
+            font-family: 'Syne', sans-serif;
+            font-size: clamp(3rem, 8vw, 5rem);
+            font-weight: 800;
+            line-height: 1;
+            margin-bottom: 2rem;
+        }
+
+        .about-hero p {
+            font-size: 1.25rem;
+            line-height: 1.6;
+            font-weight: 500;
+            color: rgba(255, 255, 255, 0.9);
+        }
+
+        .mission-section {
+            padding: 120px 5%;
+            background: white;
+            text-align: center;
+        }
+
+        .mission-container {
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        .mission-tag {
+            color: var(--green);
+            font-family: 'Syne', sans-serif;
+            font-size: 11px;
+            font-weight: 800;
+            letter-spacing: 0.2em;
+            text-transform: uppercase;
+            margin-bottom: 1rem;
+            display: block;
+        }
+
+        .mission-title {
+            font-family: 'Syne', sans-serif;
+            font-size: 3rem;
+            font-weight: 800;
+            color: var(--dark);
+            margin-bottom: 3.5rem;
+            letter-spacing: -0.02em;
+        }
+
+        .mission-text {
+            font-size: 1.2rem;
+            line-height: 1.8;
+            color: var(--body-text);
+            font-weight: 500;
+        }
+
+        .areas-section {
+            padding: 120px 5%;
+            background: #fcfcfc;
+        }
+
+        .areas-header {
+            text-align: center;
+            margin-bottom: 80px;
+        }
+
+        .areas-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 32px;
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+
+        .area-card {
+            background: white;
+            padding: 50px 40px;
+            border-radius: 24px;
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.03);
+            transition: all 0.4s cubic-bezier(0.23, 1, 0.32, 1);
+            border: 1px solid rgba(0, 0, 0, 0.05);
+        }
+
+        .area-card:hover {
+            transform: translateY(-12px);
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.08);
+            border-color: var(--green);
+        }
+
+        .area-title {
+            font-family: 'Syne', sans-serif;
+            font-size: 1.75rem;
+            font-weight: 800;
+            color: var(--dark);
+            margin-bottom: 1.5rem;
+        }
+
+        .area-desc {
+            font-size: 1.1rem;
+            line-height: 1.6;
+            color: var(--body-text);
+            font-weight: 500;
+        }
+
+        @media (max-width: 768px) {
+            .about-hero {
+                height: auto;
+                padding: 180px 0 120px;
+            }
+
+            .mission-title {
+                font-size: 2.25rem;
+            }
+
+            .mission-section,
+            .areas-section {
+                padding: 80px 5%;
+            }
+
+            .area-card {
+                padding: 35px;
+            }
+
+            .areas-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- CURSOR -->
+    <div id="cursor"></div>
+    <div id="cursor-ring"></div>
+
+    <!-- NAV -->
+    <nav id="navbar">
+        <a href="index.html" class="logo">
+            <div class="logo-pill">
+                <div class="logo-waves"></div>
+            </div>
+            <div class="logo-text">
+                <div class="logo-brand">
+                    <span>power</span>
+                    <span>to move</span>
+                </div>
+                <span class="logo-caption">soluções de mobilidade elétrica</span>
+            </div>
+        </a>
+
+        <ul class="nav-links">
+            <li><a href="index.html">Início</a></li>
+            <li class="has-mega">
+                <a href="produtos.html">
+                    Produtos
+                    <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3">
+                        <path d="M6 9l6 6 6-6" />
+                    </svg>
+                </a>
+                <div class="mega-menu">
+                    <div class="mega-col">
+                        <div class="mega-col-title">EV Home Chargers</div>
+                        <div class="mega-items">
+                            <a href="home-line.html" class="mega-item">
+                                <span class="mega-item-title">Home Line</span>
+                                <span class="mega-item-desc">Simples, seguro e eficiente</span>
+                            </a>
+                            <a href="#" class="mega-item">
+                                <span class="mega-item-title">Mini Pro 2</span>
+                                <span class="mega-item-desc">Inteligente e conectado</span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="mega-col">
+                        <div class="mega-col-title">EV Business Chargers</div>
+                        <div class="mega-items">
+                            <a href="business-line.html" class="mega-item">
+                                <span class="mega-item-title">Business Line</span>
+                                <span class="mega-item-desc">Gestão de frotas e condomínios</span>
+                            </a>
+                            <a href="fast-charge.html" class="mega-item">
+                                <span class="mega-item-title">Fast Charge</span>
+                                <span class="mega-item-desc">Carregamento ultrarrápido DC</span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="mega-col">
+                        <div class="mega-col-title">More Products</div>
+                        <div class="mega-items">
+                            <a href="accessories.html" class="mega-item">
+                                <span class="mega-item-title">Cabos & Acessórios</span>
+                                <span class="mega-item-desc">Cabos, adaptadores e suportes</span>
+                            </a>
+                            <a href="#" class="mega-item">
+                                <span class="mega-item-title">Software Solutions</span>
+                                <span class="mega-item-desc">Plataforma de gestão P2M</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li><a href="about-us.html" class="active">Sobre Nós</a></li>
+            <li><a href="index.html#footer">Contactos</a></li>
+        </ul>
+
+        <div class="nav-right">
+            <a href="mailto:mail@powertomove.pt" class="nav-cta-secondary">Contacte-nos</a>
+            <a href="index.html#hero" class="nav-cta">Pedido de Proposta</a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="about-hero">
+        <div class="hero-left-fade"></div>
+        <div class="hero-vignette"></div>
+        <img src="https://images.unsplash.com/photo-1593941707882-a5bba14938c7?ixlib=rb-4.0.3&auto=format&fit=crop&w=2000&q=80"
+            alt="Electric Mobility" class="hero-bg">
+        <div class="about-hero-content">
+            <h1>Sobre nós</h1>
+            <p>Acreditamos num futuro sustentável, livre de emissões e movido a eletricidade. Temos a ambição de poder
+                participar nesta revolução, contribuindo com tecnologia de última geração para desenvolvimento da
+                infraestrutura que suportará esta mudança.</p>
+        </div>
+    </section>
+
+    <!-- Mission Section -->
+    <section class="mission-section">
+        <div class="mission-container">
+            <span class="mission-tag">Power to Move</span>
+            <h2 class="mission-title">Conheça-nos melhor</h2>
+            <div class="mission-text">
+                <p>A Power to Move quer afirmar-se no mercado como o seu parceiro de confiança no processo de evolução
+                    para a mobilidade elétrica. Partilhamos a visão de uma sociedade livre de emissões e independente
+                    face aos combustíveis fósseis.</p>
+                <br>
+                <p>Move-nos a missão de contribuir com as nossas soluções para um futuro mais sustentável, amigo do
+                    ambiente e dos seres vivos. Queremos dar o nosso contributo nesta transformação, oferecendo ao
+                    mercado soluções tecnológicas para que a afirmação da mobilidade elétrica possa acontecer a partir
+                    de hoje. Ligue-se a nós e participe também na revolução elétrica.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Areas of Intervention -->
+    <section class="areas-section">
+        <div class="areas-header">
+            <span class="mission-tag">Áreas de Intervenção</span>
+            <h2 class="mission-title">Onde Actuamos</h2>
+        </div>
+        <div class="areas-grid">
+            <div class="area-card">
+                <h3 class="area-title">Residencial</h3>
+                <p class="area-desc">Sabia que no futuro 70 a 80% dos carregamentos dos veículos elétricos serão
+                    realizados junto ao local de residência dos utilizadores? Consulte a nossa gama de carregadores
+                    específicos para utilização residencial, ideais para moradias unifamiliares ou condomínios.</p>
+            </div>
+            <div class="area-card">
+                <h3 class="area-title">Corporate</h3>
+                <p class="area-desc">Coloque a sua empresa na vanguarda da mobilidade elétrica, disponibilizando aos
+                    seus colaboradores postos de carregamento modernos, seguros e de utilização amigável. A Power to
+                    Move oferece-lhe um conjunto de soluções que respondem às suas necessidades presentes e com
+                    potencial de expansão no futuro.</p>
+            </div>
+            <div class="area-card">
+                <h3 class="area-title">Parques Comerciais</h3>
+                <p class="area-desc">Valorize o seu negócio oferecendo aos seus clientes a possibilidade de carregar as
+                    suas viaturas durante o tempo de parqueamento. Disponibilizamos postos de carregamento rápido, de
+                    corrente contínua, e corrente alternada até 22 kW que vão tornar o seu espaço comercial mais
+                    apetecível para os seus clientes. Ligue-se a nós e dê uma nova energia ao seu negócio.</p>
+            </div>
+            <div class="area-card">
+                <h3 class="area-title">Frotas Comerciais</h3>
+                <p class="area-desc">Reduza os custos operacionais da sua frota de viaturas de serviço, apostando em
+                    definitivo na mobilidade elétrica. Vamos ajudá-lo a escolher a melhor solução de carregamento, que
+                    permitirá um controlo rigoroso dos consumos de cada viatura, e uma gestão eficiente de cada sessão
+                    de carregamento. Ligue-se à Power to Move e abandone em definitivo a dependência dos postos de
+                    combustível.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="footer">
+        <div class="footer-grid">
+            <div class="footer-col brand-col">
+                <div class="logo-box footer-logo-box">
+                    <div class="logo-pill">
+                        <div class="logo-waves"></div>
+                    </div>
+                    <div class="logo-brand">
+                        <span>power</span>
+                        <span>to move</span>
+                    </div>
+                </div>
+                <p class="footer-proposal">Lideramos o caminho para uma mobilidade sustentável e inteligente. Do
+                    residencial ao ultra-rápido, movemos o seu futuro.</p>
+            </div>
+            <div class="footer-col links-col">
+                <div class="footer-col-title">PAGES</div>
+                <ul class="footer-links">
+                    <li><a href="index.html">Início</a></li>
+                    <li><a href="produtos.html">Produtos</a></li>
+                    <li><a href="about-us.html">Sobre Nós</a></li>
+                    <li><a href="#footer">Contactos</a></li>
+                </ul>
+            </div>
+            <div class="footer-col signup-col">
+                <div class="footer-col-title">STAY UPDATED</div>
+                <p class="footer-signup-text">Gira o seu carregamento com inteligência. Subscreva para novidades.</p>
+                <form class="footer-form">
+                    <input type="email" placeholder="O seu email" required>
+                    <button type="submit">Join</button>
+                </form>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <span class="footer-copy">© 2026 Power to Move · Todos os direitos reservados.</span>
+            <div class="footer-socials">
+                <a href="#" class="footer-social">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                        <path
+                            d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z" />
+                    </svg>
+                </a>
+                <a href="#" class="footer-social">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                        <path
+                            d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" />
+                    </svg>
+                </a>
+                <a href="#" class="footer-social">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <rect x="2" y="2" width="20" height="20" rx="5" ry="5" />
+                        <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z" />
+                        <line x1="17.5" y1="6.5" x2="17.51" y2="6.5" />
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/landing.js"></script>
+</body>
+
+</html>
