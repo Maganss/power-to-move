@@ -3,346 +3,356 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <title>Fast Charge | Power To Move</title>
     <meta name="description" content="Carregamento ultrarrápido DC até 350 kW.">
     <link rel="stylesheet" href="css/styles.css">
     <link rel="icon" href="https://www.powertomove.pt/uploads/LOGO_PTM_ICON_Pantone_copy.png">
+    <style>
+        .page-wrapper {
+            overflow-x: hidden;
+            width: 100%;
+            position: relative;
+        }
+    </style>
 </head>
 
 <body>
+    <div class="page-wrapper">
 
-    <!-- Navbar -->
-    <nav class="navbar" id="navbar">
-        <div class="nav-container">
-            <a href="index.html" class="nav-logo">
-                <div class="logo-pill">
-                    <div class="logo-waves"></div>
-                </div>
-                <div class="logo-text">
-                    <div class="logo-name">
-                        <span>power</span>
-                        <span>to move</span>
+        <!-- Navbar -->
+        <nav class="navbar" id="navbar">
+            <div class="nav-container">
+                <a href="index.html" class="nav-logo">
+                    <div class="logo-pill">
+                        <div class="logo-waves"></div>
                     </div>
-                    <span class="logo-subtitle">soluções de mobilidade elétrica</span>
-                </div>
-            </a>
-            <div class="nav-links" id="navLinks">
-                <a href="index.html" class="nav-link">Início</a>
-
-                <!-- Mega Menu Item -->
-                <div class="nav-item">
-                    <div class="nav-link active">
-                        Produtos
-                        <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                            stroke-width="3">
-                            <path d="M6 9l6 6 6-6" />
-                        </svg>
-                    </div>
-                    <div class="mega-menu">
-                        <div>
-                            <span class="mega-column-title">EV Home Chargers</span>
-                            <div class="mega-items">
-                                <a href="home-line.html" class="mega-link">Home Line</a>
-                                <span class="mega-link-desc">Simples, seguro e eficiente</span>
-                                <a href="home-line.html#mini-pro-2" class="mega-link">Mini Pro 2</a>
-                                <span class="mega-link-desc">Inteligente e conectado</span>
-                            </div>
-                        </div>
-                        <div>
-                            <span class="mega-column-title">EV Business Chargers</span>
-                            <div class="mega-items">
-                                <a href="business-line.html" class="mega-link">Business Line</a>
-                                <span class="mega-link-desc">Gestão de frotas e condomínios</span>
-                                <a href="fast-charge.html" class="mega-link active">Fast Charge</a>
-                                <span class="mega-link-desc">Carregamento ultrarrápido DC</span>
-                            </div>
-                        </div>
-                        <div>
-                            <span class="mega-column-title">More Products</span>
-                            <div class="mega-items">
-                                <a href="accessories.html" class="mega-link">Cabos &amp; Acessórios</a>
-                                <span class="mega-link-desc">Cabos, adaptadores e suportes</span>
-                                <a href="#" class="mega-link">Software Solutions</a>
-                                <span class="mega-link-desc">Plataforma de gestão P2M</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <a href="about-us.html" class="nav-link">Sobre Nós</a>
-                <a href="index.html#footer" class="nav-link">Contactos</a>
-            </div>
-            <div class="nav-right">
-                <a href="mailto:mail@powertomove.pt" class="nav-cta-secondary">Contacte-nos</a>
-                <a href="index.html#hero" class="nav-cta">Pedido de Proposta</a>
-                <button class="nav-hamburger" id="hamburger" aria-label="Menu">
-                    <span></span><span></span><span></span>
-                </button>
-            </div>
-        </div>
-    </nav>
-
-    <!-- Mobile Nav -->
-    <div class="mobile-nav" id="mobileNav">
-        <a href="/" class="nav-link">Início</a>
-        <a href="produtos.html" class="nav-link active">Produtos</a>
-        <a href="/about-us" class="nav-link">Sobre Nós</a>
-        <a href="index.html#footer" class="nav-link">Contactos</a>
-        <a href="/pedido-proposta" class="nav-cta">Pedido de Proposta</a>
-    </div>
-
-    <!-- Hero -->
-    <section class="hero">
-        <div class="hero-grid-overlay"></div>
-        <div class="hero-glow"></div>
-        <div class="hero-content">
-            <span class="hero-badge">⚡ Fast Charge</span>
-            <h1 class="hero-title">Carregamento <span class="text-green">Ultrarrápido</span></h1>
-            <p class="hero-subtitle">Potência e velocidade para quem não pode parar. Soluções DC robustas e expansíveis
-                até 350 kW.</p>
-        </div>
-    </section>
-
-    <!-- Category Nav -->
-    <div class="category-nav" id="categoryNav">
-        <div class="category-nav-container">
-            <a href="home-line.html" class="category-btn">
-                <span class="category-icon">🏠</span>
-                <span class="category-label">Home Line</span>
-                <span class="category-count">7 produtos</span>
-            </a>
-            <a href="business-line.html" class="category-btn">
-                <span class="category-icon">🏢</span>
-                <span class="category-label">Business Line</span>
-                <span class="category-count">3 produtos</span>
-            </a>
-            <a href="fast-charge.html" class="category-btn active">
-                <span class="category-icon">⚡</span>
-                <span class="category-label">Fast Charge</span>
-                <span class="category-count">3 produtos</span>
-            </a>
-            <a href="accessories.html" class="category-btn">
-                <span class="category-icon">🔌</span>
-                <span class="category-label">Cabos &amp; Acessórios</span>
-                <span class="category-count">3 produtos</span>
-            </a>
-        </div>
-    </div>
-
-    <!-- Detailed Product Section -->
-    <section class="product-detail-section">
-        <div class="container">
-
-            <!-- Product 1: DC Charger -->
-            <div class="product-detail-row">
-                <div class="detail-image-col">
-                    <div class="detail-image-container">
-                        <span class="detail-badge">Expansível</span>
-                        <img src="https://www.powertomove.pt/images/artigos/normal/1560502903.dccharger.jpg"
-                            alt="DC Charger" class="detail-image">
-                    </div>
-                </div>
-                <div class="detail-content-col">
-                    <span class="detail-subtitle">Rapid Charging</span>
-                    <h2 class="detail-title">DC Charger</h2>
-                    <p class="detail-desc">Estação de carregamento rápido DC modular e expansível. Ideal para estações
-                        de serviço e frotas que exigem rapidez. Permite adicionar módulos de potência conforme a
-                        necessidade.</p>
-
-                    <div class="detail-specs">
-                        <div class="detail-spec-item">
-                            <svg class="detail-spec-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                                stroke-width="2">
-                                <path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"></path>
-                            </svg>
-                            <div>
-                                <span class="detail-spec-text">Fast DC</span>
-                                <span class="detail-spec-label">Carregamento Rápido</span>
-                            </div>
-                        </div>
-                        <div class="detail-spec-item">
-                            <svg class="detail-spec-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                                stroke-width="2">
-                                <polyline points="16 3 21 3 21 8"></polyline>
-                                <line x1="4" y1="20" x2="21" y2="3"></line>
-                                <polyline points="21 16 21 21 16 21"></polyline>
-                                <line x1="15" y1="15" x2="21" y2="21"></line>
-                                <line x1="4" y1="4" x2="9" y2="9"></line>
-                            </svg>
-                            <div>
-                                <span class="detail-spec-text">Expansível</span>
-                                <span class="detail-spec-label">Modular</span>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="detail-actions">
-                        <a href="/produto/13/dc-charger" class="btn-primary">Detalhes</a>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Product 2: User Unit (Reverse) -->
-            <div class="product-detail-row reverse">
-                <div class="detail-content-col">
-                    <span class="detail-subtitle">Ultra Performance</span>
-                    <h2 class="detail-title">User Unit</h2>
-                    <p class="detail-desc">A próxima geração de carregamento. Capaz de fornecer até 350 kW e 500 A,
-                        permitindo recuperar 400 km de autonomia em menos de 15 minutos. O futuro está aqui.</p>
-
-                    <div class="detail-specs">
-                        <div class="detail-spec-item">
-                            <svg class="detail-spec-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                                stroke-width="2">
-                                <path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"></path>
-                            </svg>
-                            <div>
-                                <span class="detail-spec-text">350 kW</span>
-                                <span class="detail-spec-label">Potência Máxima</span>
-                            </div>
-                        </div>
-                        <div class="detail-spec-item">
-                            <svg class="detail-spec-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                                stroke-width="2">
-                                <circle cx="12" cy="12" r="10"></circle>
-                                <polyline points="12 6 12 12 16 14"></polyline>
-                            </svg>
-                            <div>
-                                <span class="detail-spec-text">&lt; 15 min</span>
-                                <span class="detail-spec-label">400 km Autonomia</span>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="detail-actions">
-                        <a href="/produto/14/user-unit" class="btn-primary">Detalhes</a>
-                    </div>
-                </div>
-                <div class="detail-image-col">
-                    <div class="detail-image-container">
-                        <span class="detail-badge">350 kW</span>
-                        <img src="https://www.powertomove.pt/images/artigos/normal/1560503811.unit.jpg" alt="User Unit"
-                            class="detail-image">
-                    </div>
-                </div>
-            </div>
-
-            <!-- Product 3: Power -->
-            <div class="product-detail-row">
-                <div class="detail-image-col">
-                    <div class="detail-image-container">
-                        <span class="detail-badge">Power Unit</span>
-                        <img src="https://www.powertomove.pt/images/artigos/normal/1560504169.power.jpg" alt="Power"
-                            class="detail-image">
-                    </div>
-                </div>
-                <div class="detail-content-col">
-                    <span class="detail-subtitle">Infraestrutura</span>
-                    <h2 class="detail-title">Power</h2>
-                    <p class="detail-desc">Unidades de potência dedicadas para alimentar as User Units. Instalação
-                        remota para otimizar o espaço e reduzir o ruído nas zonas de carregamento.</p>
-
-                    <div class="detail-specs">
-                        <div class="detail-spec-item">
-                            <svg class="detail-spec-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                                stroke-width="2">
-                                <path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"></path>
-                            </svg>
-                            <div>
-                                <span class="detail-spec-text">175–350 kW</span>
-                                <span class="detail-spec-label">Output</span>
-                            </div>
-                        </div>
-                        <div class="detail-spec-item">
-                            <svg class="detail-spec-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                                stroke-width="2">
-                                <rect x="4" y="4" width="16" height="16" rx="2" ry="2"></rect>
-                                <rect x="9" y="9" width="6" height="6"></rect>
-                                <line x1="9" y1="1" x2="9" y2="4"></line>
-                                <line x1="15" y1="1" x2="15" y2="4"></line>
-                                <line x1="9" y1="20" x2="9" y2="23"></line>
-                                <line x1="15" y1="20" x2="15" y2="23"></line>
-                                <line x1="20" y1="9" x2="23" y2="9"></line>
-                                <line x1="20" y1="14" x2="23" y2="14"></line>
-                                <line x1="1" y1="9" x2="4" y2="9"></line>
-                                <line x1="1" y1="14" x2="4" y2="14"></line>
-                            </svg>
-                            <div>
-                                <span class="detail-spec-text">Centralizado</span>
-                                <span class="detail-spec-label">Gestão Térmica</span>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="detail-actions">
-                        <a href="/produto/17/power" class="btn-primary">Detalhes</a>
-                    </div>
-                </div>
-            </div>
-
-        </div>
-    </section>
-
-
-
-    <!-- Footer -->
-    <footer>
-        <div class="footer-inner">
-            <div class="footer-grid">
-                <div class="footer-col brand-col">
-                    <div class="logo-box footer-logo-box">
-                        <div class="logo-pill">
-                            <div class="logo-waves"></div>
-                        </div>
-                        <div class="logo-brand">
+                    <div class="logo-text">
+                        <div class="logo-name">
                             <span>power</span>
                             <span>to move</span>
                         </div>
+                        <span class="logo-subtitle">soluções de mobilidade elétrica</span>
                     </div>
-                    <p class="footer-proposal">Lideramos o caminho para uma mobilidade sustentável e inteligente. Do
-                        residencial ao ultra-rápido, movemos o seu futuro.</p>
-                </div>
-                <div class="footer-col links-col">
-                    <div class="footer-col-title">PAGES</div>
-                    <ul class="footer-links">
-                        <li><a href="index.html">Início</a></li>
-                        <li><a href="produtos.html">Produtos</a></li>
-                        <li><a href="about-us.html">Sobre Nós</a></li>
-                        <li><a href="index.html#footer">Contactos</a></li>
-                    </ul>
-                </div>
+                </a>
+                <div class="nav-links" id="navLinks">
+                    <a href="index.html" class="nav-link">Início</a>
 
-            </div>
-            <div class="footer-bottom">
-                <span class="footer-copy">© 2026 Power to Move · Todos os direitos reservados.</span>
-                <div class="footer-socials">
-                    <a href="#" class="footer-social">
-                        <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
-                            <path
-                                d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z" />
-                        </svg>
-                    </a>
-                    <a href="#" class="footer-social">
-                        <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
-                            <path
-                                d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" />
-                        </svg>
-                    </a>
-                    <a href="#" class="footer-social">
-                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                            stroke-width="2">
-                            <rect x="2" y="2" width="20" height="20" rx="5" ry="5" />
-                            <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z" />
-                            <line x1="17.5" y1="6.5" x2="17.51" y2="6.5" />
-                        </svg>
-                    </a>
+                    <!-- Mega Menu Item -->
+                    <div class="nav-item">
+                        <div class="nav-link active">
+                            Produtos
+                            <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="3">
+                                <path d="M6 9l6 6 6-6" />
+                            </svg>
+                        </div>
+                        <div class="mega-menu">
+                            <div>
+                                <span class="mega-column-title">EV Home Chargers</span>
+                                <div class="mega-items">
+                                    <a href="home-line.html" class="mega-link">Home Line</a>
+                                    <span class="mega-link-desc">Simples, seguro e eficiente</span>
+                                    <a href="home-line.html#mini-pro-2" class="mega-link">Mini Pro 2</a>
+                                    <span class="mega-link-desc">Inteligente e conectado</span>
+                                </div>
+                            </div>
+                            <div>
+                                <span class="mega-column-title">EV Business Chargers</span>
+                                <div class="mega-items">
+                                    <a href="business-line.html" class="mega-link">Business Line</a>
+                                    <span class="mega-link-desc">Gestão de frotas e condomínios</span>
+                                    <a href="fast-charge.html" class="mega-link active">Fast Charge</a>
+                                    <span class="mega-link-desc">Carregamento ultrarrápido DC</span>
+                                </div>
+                            </div>
+                            <div>
+                                <span class="mega-column-title">More Products</span>
+                                <div class="mega-items">
+                                    <a href="accessories.html" class="mega-link">Cabos &amp; Acessórios</a>
+                                    <span class="mega-link-desc">Cabos, adaptadores e suportes</span>
+                                    <a href="#" class="mega-link">Software Solutions</a>
+                                    <span class="mega-link-desc">Plataforma de gestão P2M</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <a href="about-us.html" class="nav-link">Sobre Nós</a>
+                    <a href="index.html#footer" class="nav-link">Contactos</a>
                 </div>
+                <div class="nav-right">
+                    <a href="mailto:mail@powertomove.pt" class="nav-cta-secondary">Contacte-nos</a>
+                    <a href="index.html#hero" class="nav-cta">Pedido de Proposta</a>
+                    <button class="nav-hamburger" id="hamburger" aria-label="Menu">
+                        <span></span><span></span><span></span>
+                    </button>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Mobile Nav -->
+        <div class="mobile-nav" id="mobileNav">
+            <a href="/" class="nav-link">Início</a>
+            <a href="produtos.html" class="nav-link active">Produtos</a>
+            <a href="/about-us" class="nav-link">Sobre Nós</a>
+            <a href="index.html#footer" class="nav-link">Contactos</a>
+            <a href="/pedido-proposta" class="nav-cta">Pedido de Proposta</a>
+        </div>
+
+        <!-- Hero -->
+        <section class="hero">
+            <div class="hero-grid-overlay"></div>
+            <div class="hero-glow"></div>
+            <div class="hero-content">
+                <span class="hero-badge">⚡ Fast Charge</span>
+                <h1 class="hero-title">Carregamento <span class="text-green">Ultrarrápido</span></h1>
+                <p class="hero-subtitle">Potência e velocidade para quem não pode parar. Soluções DC robustas e
+                    expansíveis
+                    até 350 kW.</p>
+            </div>
+        </section>
+
+        <!-- Category Nav -->
+        <div class="category-nav" id="categoryNav">
+            <div class="category-nav-container">
+                <a href="home-line.html" class="category-btn">
+                    <span class="category-icon">🏠</span>
+                    <span class="category-label">Home Line</span>
+                    <span class="category-count">7 produtos</span>
+                </a>
+                <a href="business-line.html" class="category-btn">
+                    <span class="category-icon">🏢</span>
+                    <span class="category-label">Business Line</span>
+                    <span class="category-count">3 produtos</span>
+                </a>
+                <a href="fast-charge.html" class="category-btn active">
+                    <span class="category-icon">⚡</span>
+                    <span class="category-label">Fast Charge</span>
+                    <span class="category-count">3 produtos</span>
+                </a>
+                <a href="accessories.html" class="category-btn">
+                    <span class="category-icon">🔌</span>
+                    <span class="category-label">Cabos &amp; Acessórios</span>
+                    <span class="category-count">3 produtos</span>
+                </a>
             </div>
         </div>
-    </footer>
 
-    <script src="js/main.js"></script>
+        <!-- Detailed Product Section -->
+        <section class="product-detail-section">
+            <div class="container">
+
+                <!-- Product 1: DC Charger -->
+                <div class="product-detail-row">
+                    <div class="detail-image-col">
+                        <div class="detail-image-container">
+                            <span class="detail-badge">Expansível</span>
+                            <img src="https://www.powertomove.pt/images/artigos/normal/1560502903.dccharger.jpg"
+                                alt="DC Charger" class="detail-image">
+                        </div>
+                    </div>
+                    <div class="detail-content-col">
+                        <span class="detail-subtitle">Rapid Charging</span>
+                        <h2 class="detail-title">DC Charger</h2>
+                        <p class="detail-desc">Estação de carregamento rápido DC modular e expansível. Ideal para
+                            estações
+                            de serviço e frotas que exigem rapidez. Permite adicionar módulos de potência conforme a
+                            necessidade.</p>
+
+                        <div class="detail-specs">
+                            <div class="detail-spec-item">
+                                <svg class="detail-spec-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2">
+                                    <path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"></path>
+                                </svg>
+                                <div>
+                                    <span class="detail-spec-text">Fast DC</span>
+                                    <span class="detail-spec-label">Carregamento Rápido</span>
+                                </div>
+                            </div>
+                            <div class="detail-spec-item">
+                                <svg class="detail-spec-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2">
+                                    <polyline points="16 3 21 3 21 8"></polyline>
+                                    <line x1="4" y1="20" x2="21" y2="3"></line>
+                                    <polyline points="21 16 21 21 16 21"></polyline>
+                                    <line x1="15" y1="15" x2="21" y2="21"></line>
+                                    <line x1="4" y1="4" x2="9" y2="9"></line>
+                                </svg>
+                                <div>
+                                    <span class="detail-spec-text">Expansível</span>
+                                    <span class="detail-spec-label">Modular</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="detail-actions">
+                            <a href="/produto/13/dc-charger" class="btn-primary">Detalhes</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 2: User Unit (Reverse) -->
+                <div class="product-detail-row reverse">
+                    <div class="detail-content-col">
+                        <span class="detail-subtitle">Ultra Performance</span>
+                        <h2 class="detail-title">User Unit</h2>
+                        <p class="detail-desc">A próxima geração de carregamento. Capaz de fornecer até 350 kW e 500 A,
+                            permitindo recuperar 400 km de autonomia em menos de 15 minutos. O futuro está aqui.</p>
+
+                        <div class="detail-specs">
+                            <div class="detail-spec-item">
+                                <svg class="detail-spec-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2">
+                                    <path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"></path>
+                                </svg>
+                                <div>
+                                    <span class="detail-spec-text">350 kW</span>
+                                    <span class="detail-spec-label">Potência Máxima</span>
+                                </div>
+                            </div>
+                            <div class="detail-spec-item">
+                                <svg class="detail-spec-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2">
+                                    <circle cx="12" cy="12" r="10"></circle>
+                                    <polyline points="12 6 12 12 16 14"></polyline>
+                                </svg>
+                                <div>
+                                    <span class="detail-spec-text">&lt; 15 min</span>
+                                    <span class="detail-spec-label">400 km Autonomia</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="detail-actions">
+                            <a href="/produto/14/user-unit" class="btn-primary">Detalhes</a>
+                        </div>
+                    </div>
+                    <div class="detail-image-col">
+                        <div class="detail-image-container">
+                            <span class="detail-badge">350 kW</span>
+                            <img src="https://www.powertomove.pt/images/artigos/normal/1560503811.unit.jpg"
+                                alt="User Unit" class="detail-image">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 3: Power -->
+                <div class="product-detail-row">
+                    <div class="detail-image-col">
+                        <div class="detail-image-container">
+                            <span class="detail-badge">Power Unit</span>
+                            <img src="https://www.powertomove.pt/images/artigos/normal/1560504169.power.jpg" alt="Power"
+                                class="detail-image">
+                        </div>
+                    </div>
+                    <div class="detail-content-col">
+                        <span class="detail-subtitle">Infraestrutura</span>
+                        <h2 class="detail-title">Power</h2>
+                        <p class="detail-desc">Unidades de potência dedicadas para alimentar as User Units. Instalação
+                            remota para otimizar o espaço e reduzir o ruído nas zonas de carregamento.</p>
+
+                        <div class="detail-specs">
+                            <div class="detail-spec-item">
+                                <svg class="detail-spec-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2">
+                                    <path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"></path>
+                                </svg>
+                                <div>
+                                    <span class="detail-spec-text">175–350 kW</span>
+                                    <span class="detail-spec-label">Output</span>
+                                </div>
+                            </div>
+                            <div class="detail-spec-item">
+                                <svg class="detail-spec-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2">
+                                    <rect x="4" y="4" width="16" height="16" rx="2" ry="2"></rect>
+                                    <rect x="9" y="9" width="6" height="6"></rect>
+                                    <line x1="9" y1="1" x2="9" y2="4"></line>
+                                    <line x1="15" y1="1" x2="15" y2="4"></line>
+                                    <line x1="9" y1="20" x2="9" y2="23"></line>
+                                    <line x1="15" y1="20" x2="15" y2="23"></line>
+                                    <line x1="20" y1="9" x2="23" y2="9"></line>
+                                    <line x1="20" y1="14" x2="23" y2="14"></line>
+                                    <line x1="1" y1="9" x2="4" y2="9"></line>
+                                    <line x1="1" y1="14" x2="4" y2="14"></line>
+                                </svg>
+                                <div>
+                                    <span class="detail-spec-text">Centralizado</span>
+                                    <span class="detail-spec-label">Gestão Térmica</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="detail-actions">
+                            <a href="/produto/17/power" class="btn-primary">Detalhes</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+
+
+        <!-- Footer -->
+        <footer>
+            <div class="footer-inner">
+                <div class="footer-grid">
+                    <div class="footer-col brand-col">
+                        <div class="logo-box footer-logo-box">
+                            <div class="logo-pill">
+                                <div class="logo-waves"></div>
+                            </div>
+                            <div class="logo-brand">
+                                <span>power</span>
+                                <span>to move</span>
+                            </div>
+                        </div>
+                        <p class="footer-proposal">Lideramos o caminho para uma mobilidade sustentável e inteligente. Do
+                            residencial ao ultra-rápido, movemos o seu futuro.</p>
+                    </div>
+                    <div class="footer-col links-col">
+                        <div class="footer-col-title">PAGES</div>
+                        <ul class="footer-links">
+                            <li><a href="index.html">Início</a></li>
+                            <li><a href="produtos.html">Produtos</a></li>
+                            <li><a href="about-us.html">Sobre Nós</a></li>
+                            <li><a href="index.html#footer">Contactos</a></li>
+                        </ul>
+                    </div>
+
+                </div>
+                <div class="footer-bottom">
+                    <span class="footer-copy">© 2026 Power to Move · Todos os direitos reservados.</span>
+                    <div class="footer-socials">
+                        <a href="#" class="footer-social">
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                                <path
+                                    d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z" />
+                            </svg>
+                        </a>
+                        <a href="#" class="footer-social">
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                                <path
+                                    d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" />
+                            </svg>
+                        </a>
+                        <a href="#" class="footer-social">
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2">
+                                <rect x="2" y="2" width="20" height="20" rx="5" ry="5" />
+                                <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z" />
+                                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <script src="js/main.js"></script>
 </body>
 
 </html>

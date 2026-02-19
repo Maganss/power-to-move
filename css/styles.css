@@ -424,12 +424,14 @@ hr {
 
 .hero-title {
    font-family: var(--font-heading);
-   font-size: clamp(36px, 6vw, 64px);
+   font-size: clamp(32px, 10vw, 64px);
    font-weight: 800;
    color: var(--white);
    line-height: 1.15;
-   max-width: 800px;
-   margin-bottom: 24px
+   max-width: 100%;
+   margin-bottom: 24px;
+   word-wrap: break-word;
+   overflow-wrap: break-word;
 }
 
 .hero-subtitle {

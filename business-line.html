@@ -3,347 +3,359 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <title>Business Line | Power To Move</title>
     <meta name="description" content="Soluções de carregamento para empresas, frotas e condomínios.">
     <link rel="stylesheet" href="css/styles.css">
     <link rel="icon" href="https://www.powertomove.pt/uploads/LOGO_PTM_ICON_Pantone_copy.png">
+    <style>
+        .page-wrapper {
+            overflow-x: hidden;
+            width: 100%;
+            position: relative;
+        }
+    </style>
 </head>
 
 <body>
+    <div class="page-wrapper">
 
-    <!-- Navbar -->
-    <nav class="navbar" id="navbar">
-        <div class="nav-container">
-            <a href="index.html" class="nav-logo">
-                <div class="logo-pill">
-                    <div class="logo-waves"></div>
-                </div>
-                <div class="logo-text">
-                    <div class="logo-name">
-                        <span>power</span>
-                        <span>to move</span>
+        <!-- Navbar -->
+        <nav class="navbar" id="navbar">
+            <div class="nav-container">
+                <a href="index.html" class="nav-logo">
+                    <div class="logo-pill">
+                        <div class="logo-waves"></div>
                     </div>
-                    <span class="logo-subtitle">soluções de mobilidade elétrica</span>
-                </div>
-            </a>
-            <div class="nav-links" id="navLinks">
-                <a href="index.html" class="nav-link">Início</a>
-
-                <!-- Mega Menu Item -->
-                <div class="nav-item">
-                    <div class="nav-link active">
-                        Produtos
-                        <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                            stroke-width="3">
-                            <path d="M6 9l6 6 6-6" />
-                        </svg>
-                    </div>
-                    <div class="mega-menu">
-                        <div>
-                            <span class="mega-column-title">EV Home Chargers</span>
-                            <div class="mega-items">
-                                <a href="home-line.html" class="mega-link">Home Line</a>
-                                <span class="mega-link-desc">Simples, seguro e eficiente</span>
-                                <a href="home-line.html#mini-pro-2" class="mega-link">Mini Pro 2</a>
-                                <span class="mega-link-desc">Inteligente e conectado</span>
-                            </div>
-                        </div>
-                        <div>
-                            <span class="mega-column-title">EV Business Chargers</span>
-                            <div class="mega-items">
-                                <a href="business-line.html" class="mega-link active">Business Line</a>
-                                <span class="mega-link-desc">Gestão de frotas e condomínios</span>
-                                <a href="fast-charge.html" class="mega-link">Fast Charge</a>
-                                <span class="mega-link-desc">Carregamento ultrarrápido DC</span>
-                            </div>
-                        </div>
-                        <div>
-                            <span class="mega-column-title">More Products</span>
-                            <div class="mega-items">
-                                <a href="accessories.html" class="mega-link">Cabos &amp; Acessórios</a>
-                                <span class="mega-link-desc">Cabos, adaptadores e suportes</span>
-                                <a href="#" class="mega-link">Software Solutions</a>
-                                <span class="mega-link-desc">Plataforma de gestão P2M</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <a href="about-us.html" class="nav-link">Sobre Nós</a>
-                <a href="index.html#footer" class="nav-link">Contactos</a>
-            </div>
-            <div class="nav-right">
-                <a href="mailto:mail@powertomove.pt" class="nav-cta-secondary">Contacte-nos</a>
-                <a href="index.html#hero" class="nav-cta">Pedido de Proposta</a>
-                <button class="nav-hamburger" id="hamburger" aria-label="Menu">
-                    <span></span><span></span><span></span>
-                </button>
-            </div>
-        </div>
-    </nav>
-
-    <!-- Mobile Nav -->
-    <div class="mobile-nav" id="mobileNav">
-        <a href="/" class="nav-link">Início</a>
-        <a href="produtos.html" class="nav-link active">Produtos</a>
-        <a href="/about-us" class="nav-link">Sobre Nós</a>
-        <a href="index.html#footer" class="nav-link">Contactos</a>
-        <a href="/pedido-proposta" class="nav-cta">Pedido de Proposta</a>
-    </div>
-
-    <!-- Hero -->
-    <section class="hero">
-        <div class="hero-grid-overlay"></div>
-        <div class="hero-glow"></div>
-        <div class="hero-content">
-            <span class="hero-badge">🏢 Business Line</span>
-            <h1 class="hero-title">Soluções <span class="text-green">Empresariais</span></h1>
-            <p class="hero-subtitle">Gestão inteligente de carregamento para frotas, condomínios e espaços comerciais.
-                Escalável e eficiente.</p>
-        </div>
-    </section>
-
-    <!-- Category Nav -->
-    <div class="category-nav" id="categoryNav">
-        <div class="category-nav-container">
-            <a href="home-line.html" class="category-btn">
-                <span class="category-icon">🏠</span>
-                <span class="category-label">Home Line</span>
-                <span class="category-count">7 produtos</span>
-            </a>
-            <a href="business-line.html" class="category-btn active">
-                <span class="category-icon">🏢</span>
-                <span class="category-label">Business Line</span>
-                <span class="category-count">3 produtos</span>
-            </a>
-            <a href="fast-charge.html" class="category-btn">
-                <span class="category-icon">⚡</span>
-                <span class="category-label">Fast Charge</span>
-                <span class="category-count">3 produtos</span>
-            </a>
-            <a href="accessories.html" class="category-btn">
-                <span class="category-icon">🔌</span>
-                <span class="category-label">Cabos &amp; Acessórios</span>
-                <span class="category-count">3 produtos</span>
-            </a>
-        </div>
-    </div>
-
-    <!-- Detailed Product Section -->
-    <section class="product-detail-section">
-        <div class="container">
-
-            <!-- Product 1: BusinessLine -->
-            <div class="product-detail-row">
-                <div class="detail-image-col">
-                    <div class="detail-image-container">
-                        <span class="detail-badge">Software Suite</span>
-                        <img src="https://www.powertomove.pt/images/artigos/normal/1560502571.businessline.jpg"
-                            alt="BusinessLine" class="detail-image">
-                    </div>
-                </div>
-                <div class="detail-content-col">
-                    <span class="detail-subtitle">Gestão de Frotas</span>
-                    <h2 class="detail-title">BusinessLine</h2>
-                    <p class="detail-desc">Software inteligente desenhado para simplificar a gestão de múltiplos postos
-                        de carregamento. Monitorize consumos, gira acessos e automatize a faturação de forma
-                        centralizada.</p>
-
-                    <div class="detail-specs">
-                        <div class="detail-spec-item">
-                            <svg class="detail-spec-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                                stroke-width="2">
-                                <path
-                                    d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z">
-                                </path>
-                                <polyline points="3.27 6.96 12 12.01 20.73 6.96"></polyline>
-                                <line x1="12" y1="22.08" x2="12" y2="12"></line>
-                            </svg>
-                            <div>
-                                <span class="detail-spec-text">Smart Software</span>
-                                <span class="detail-spec-label">Centralizado</span>
-                            </div>
-                        </div>
-                        <div class="detail-spec-item">
-                            <svg class="detail-spec-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                                stroke-width="2">
-                                <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
-                                <circle cx="9" cy="7" r="4"></circle>
-                                <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
-                                <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
-                            </svg>
-                            <div>
-                                <span class="detail-spec-text">Escalável</span>
-                                <span class="detail-spec-label">Frotas & Condomínios</span>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="detail-actions">
-                        <a href="/produto/5/businessline" class="btn-primary">Detalhes</a>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Product 2: Genius (Reverse) -->
-            <div class="product-detail-row reverse">
-                <div class="detail-content-col">
-                    <span class="detail-subtitle">Alta Capacidade</span>
-                    <h2 class="detail-title">Genius</h2>
-                    <p class="detail-desc">A solução mais custo-efetiva para grandes instalações. O Genius atua como um
-                        'hub' inteligente que permite conectar e gerir até 32 pontos de carregamento simultaneamente.
-                    </p>
-
-                    <div class="detail-specs">
-                        <div class="detail-spec-item">
-                            <svg class="detail-spec-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                                stroke-width="2">
-                                <rect x="2" y="2" width="20" height="8" rx="2" ry="2"></rect>
-                                <rect x="2" y="14" width="20" height="8" rx="2" ry="2"></rect>
-                                <line x1="6" y1="6" x2="6.01" y2="6"></line>
-                                <line x1="6" y1="18" x2="6.01" y2="18"></line>
-                            </svg>
-                            <div>
-                                <span class="detail-spec-text">Hub Central</span>
-                                <span class="detail-spec-label">Gestão de Rede</span>
-                            </div>
-                        </div>
-                        <div class="detail-spec-item">
-                            <svg class="detail-spec-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                                stroke-width="2">
-                                <path d="M12 2v20M2 12h20"></path>
-                            </svg>
-                            <div>
-                                <span class="detail-spec-text">32 Pontos</span>
-                                <span class="detail-spec-label">Conexões</span>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="detail-actions">
-                        <a href="/produto/6/genius" class="btn-primary">Detalhes</a>
-                    </div>
-                </div>
-                <div class="detail-image-col">
-                    <div class="detail-image-container">
-                        <span class="detail-badge">Custo-Efetivo</span>
-                        <img src="https://www.powertomove.pt/images/artigos/normal/1560502752.genius.jpg" alt="Genius"
-                            class="detail-image">
-                    </div>
-                </div>
-            </div>
-
-            <!-- Product 3: Public -->
-            <div class="product-detail-row">
-                <div class="detail-image-col">
-                    <div class="detail-image-container">
-                        <span class="detail-badge">Universal</span>
-                        <img src="https://www.powertomove.pt/images/artigos/normal/1560503859.public.jpg" alt="Public"
-                            class="detail-image">
-                    </div>
-                </div>
-                <div class="detail-content-col">
-                    <span class="detail-subtitle">Espaços Públicos</span>
-                    <h2 class="detail-title">Public</h2>
-                    <p class="detail-desc">Estações robustas e antivandalismo, preparadas para serem integradas em
-                        qualquer rede pública de carregamento. Gestão eficiente de energia e pagamentos.</p>
-
-                    <div class="detail-specs">
-                        <div class="detail-spec-item">
-                            <svg class="detail-spec-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                                stroke-width="2">
-                                <circle cx="12" cy="12" r="10"></circle>
-                                <line x1="2" y1="12" x2="22" y2="12"></line>
-                                <path
-                                    d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z">
-                                </path>
-                            </svg>
-                            <div>
-                                <span class="detail-spec-text">Multi-Rede</span>
-                                <span class="detail-spec-label">Compatibilidade</span>
-                            </div>
-                        </div>
-                        <div class="detail-spec-item">
-                            <svg class="detail-spec-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                                stroke-width="2">
-                                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
-                            </svg>
-                            <div>
-                                <span class="detail-spec-text">Resistente</span>
-                                <span class="detail-spec-label">Uso Intensivo</span>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="detail-actions">
-                        <a href="/produto/15/public" class="btn-primary">Detalhes</a>
-                    </div>
-                </div>
-            </div>
-
-        </div>
-    </section>
-
-
-
-    <!-- Footer -->
-    <footer>
-        <div class="footer-inner">
-            <div class="footer-grid">
-                <div class="footer-col brand-col">
-                    <div class="logo-box footer-logo-box">
-                        <div class="logo-pill">
-                            <div class="logo-waves"></div>
-                        </div>
-                        <div class="logo-brand">
+                    <div class="logo-text">
+                        <div class="logo-name">
                             <span>power</span>
                             <span>to move</span>
                         </div>
+                        <span class="logo-subtitle">soluções de mobilidade elétrica</span>
                     </div>
-                    <p class="footer-proposal">Lideramos o caminho para uma mobilidade sustentável e inteligente. Do
-                        residencial ao ultra-rápido, movemos o seu futuro.</p>
-                </div>
-                <div class="footer-col links-col">
-                    <div class="footer-col-title">PAGES</div>
-                    <ul class="footer-links">
-                        <li><a href="index.html">Início</a></li>
-                        <li><a href="produtos.html">Produtos</a></li>
-                        <li><a href="about-us.html">Sobre Nós</a></li>
-                        <li><a href="index.html#footer">Contactos</a></li>
-                    </ul>
-                </div>
+                </a>
+                <div class="nav-links" id="navLinks">
+                    <a href="index.html" class="nav-link">Início</a>
 
-            </div>
-            <div class="footer-bottom">
-                <span class="footer-copy">© 2026 Power to Move · Todos os direitos reservados.</span>
-                <div class="footer-socials">
-                    <a href="#" class="footer-social">
-                        <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
-                            <path
-                                d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z" />
-                        </svg>
-                    </a>
-                    <a href="#" class="footer-social">
-                        <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
-                            <path
-                                d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" />
-                        </svg>
-                    </a>
-                    <a href="#" class="footer-social">
-                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                            stroke-width="2">
-                            <rect x="2" y="2" width="20" height="20" rx="5" ry="5" />
-                            <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z" />
-                            <line x1="17.5" y1="6.5" x2="17.51" y2="6.5" />
-                        </svg>
-                    </a>
+                    <!-- Mega Menu Item -->
+                    <div class="nav-item">
+                        <div class="nav-link active">
+                            Produtos
+                            <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="3">
+                                <path d="M6 9l6 6 6-6" />
+                            </svg>
+                        </div>
+                        <div class="mega-menu">
+                            <div>
+                                <span class="mega-column-title">EV Home Chargers</span>
+                                <div class="mega-items">
+                                    <a href="home-line.html" class="mega-link">Home Line</a>
+                                    <span class="mega-link-desc">Simples, seguro e eficiente</span>
+                                    <a href="home-line.html#mini-pro-2" class="mega-link">Mini Pro 2</a>
+                                    <span class="mega-link-desc">Inteligente e conectado</span>
+                                </div>
+                            </div>
+                            <div>
+                                <span class="mega-column-title">EV Business Chargers</span>
+                                <div class="mega-items">
+                                    <a href="business-line.html" class="mega-link active">Business Line</a>
+                                    <span class="mega-link-desc">Gestão de frotas e condomínios</span>
+                                    <a href="fast-charge.html" class="mega-link">Fast Charge</a>
+                                    <span class="mega-link-desc">Carregamento ultrarrápido DC</span>
+                                </div>
+                            </div>
+                            <div>
+                                <span class="mega-column-title">More Products</span>
+                                <div class="mega-items">
+                                    <a href="accessories.html" class="mega-link">Cabos &amp; Acessórios</a>
+                                    <span class="mega-link-desc">Cabos, adaptadores e suportes</span>
+                                    <a href="#" class="mega-link">Software Solutions</a>
+                                    <span class="mega-link-desc">Plataforma de gestão P2M</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <a href="about-us.html" class="nav-link">Sobre Nós</a>
+                    <a href="index.html#footer" class="nav-link">Contactos</a>
                 </div>
+                <div class="nav-right">
+                    <a href="mailto:mail@powertomove.pt" class="nav-cta-secondary">Contacte-nos</a>
+                    <a href="index.html#hero" class="nav-cta">Pedido de Proposta</a>
+                    <button class="nav-hamburger" id="hamburger" aria-label="Menu">
+                        <span></span><span></span><span></span>
+                    </button>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Mobile Nav -->
+        <div class="mobile-nav" id="mobileNav">
+            <a href="/" class="nav-link">Início</a>
+            <a href="produtos.html" class="nav-link active">Produtos</a>
+            <a href="/about-us" class="nav-link">Sobre Nós</a>
+            <a href="index.html#footer" class="nav-link">Contactos</a>
+            <a href="/pedido-proposta" class="nav-cta">Pedido de Proposta</a>
+        </div>
+
+        <!-- Hero -->
+        <section class="hero">
+            <div class="hero-grid-overlay"></div>
+            <div class="hero-glow"></div>
+            <div class="hero-content">
+                <span class="hero-badge">🏢 Business Line</span>
+                <h1 class="hero-title">Soluções <span class="text-green">Empresariais</span></h1>
+                <p class="hero-subtitle">Gestão inteligente de carregamento para frotas, condomínios e espaços
+                    comerciais.
+                    Escalável e eficiente.</p>
+            </div>
+        </section>
+
+        <!-- Category Nav -->
+        <div class="category-nav" id="categoryNav">
+            <div class="category-nav-container">
+                <a href="home-line.html" class="category-btn">
+                    <span class="category-icon">🏠</span>
+                    <span class="category-label">Home Line</span>
+                    <span class="category-count">7 produtos</span>
+                </a>
+                <a href="business-line.html" class="category-btn active">
+                    <span class="category-icon">🏢</span>
+                    <span class="category-label">Business Line</span>
+                    <span class="category-count">3 produtos</span>
+                </a>
+                <a href="fast-charge.html" class="category-btn">
+                    <span class="category-icon">⚡</span>
+                    <span class="category-label">Fast Charge</span>
+                    <span class="category-count">3 produtos</span>
+                </a>
+                <a href="accessories.html" class="category-btn">
+                    <span class="category-icon">🔌</span>
+                    <span class="category-label">Cabos &amp; Acessórios</span>
+                    <span class="category-count">3 produtos</span>
+                </a>
             </div>
         </div>
-    </footer>
 
-    <script src="js/main.js"></script>
+        <!-- Detailed Product Section -->
+        <section class="product-detail-section">
+            <div class="container">
+
+                <!-- Product 1: BusinessLine -->
+                <div class="product-detail-row">
+                    <div class="detail-image-col">
+                        <div class="detail-image-container">
+                            <span class="detail-badge">Software Suite</span>
+                            <img src="https://www.powertomove.pt/images/artigos/normal/1560502571.businessline.jpg"
+                                alt="BusinessLine" class="detail-image">
+                        </div>
+                    </div>
+                    <div class="detail-content-col">
+                        <span class="detail-subtitle">Gestão de Frotas</span>
+                        <h2 class="detail-title">BusinessLine</h2>
+                        <p class="detail-desc">Software inteligente desenhado para simplificar a gestão de múltiplos
+                            postos
+                            de carregamento. Monitorize consumos, gira acessos e automatize a faturação de forma
+                            centralizada.</p>
+
+                        <div class="detail-specs">
+                            <div class="detail-spec-item">
+                                <svg class="detail-spec-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2">
+                                    <path
+                                        d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z">
+                                    </path>
+                                    <polyline points="3.27 6.96 12 12.01 20.73 6.96"></polyline>
+                                    <line x1="12" y1="22.08" x2="12" y2="12"></line>
+                                </svg>
+                                <div>
+                                    <span class="detail-spec-text">Smart Software</span>
+                                    <span class="detail-spec-label">Centralizado</span>
+                                </div>
+                            </div>
+                            <div class="detail-spec-item">
+                                <svg class="detail-spec-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2">
+                                    <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                                    <circle cx="9" cy="7" r="4"></circle>
+                                    <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+                                    <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+                                </svg>
+                                <div>
+                                    <span class="detail-spec-text">Escalável</span>
+                                    <span class="detail-spec-label">Frotas & Condomínios</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="detail-actions">
+                            <a href="/produto/5/businessline" class="btn-primary">Detalhes</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 2: Genius (Reverse) -->
+                <div class="product-detail-row reverse">
+                    <div class="detail-content-col">
+                        <span class="detail-subtitle">Alta Capacidade</span>
+                        <h2 class="detail-title">Genius</h2>
+                        <p class="detail-desc">A solução mais custo-efetiva para grandes instalações. O Genius atua como
+                            um
+                            'hub' inteligente que permite conectar e gerir até 32 pontos de carregamento
+                            simultaneamente.
+                        </p>
+
+                        <div class="detail-specs">
+                            <div class="detail-spec-item">
+                                <svg class="detail-spec-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2">
+                                    <rect x="2" y="2" width="20" height="8" rx="2" ry="2"></rect>
+                                    <rect x="2" y="14" width="20" height="8" rx="2" ry="2"></rect>
+                                    <line x1="6" y1="6" x2="6.01" y2="6"></line>
+                                    <line x1="6" y1="18" x2="6.01" y2="18"></line>
+                                </svg>
+                                <div>
+                                    <span class="detail-spec-text">Hub Central</span>
+                                    <span class="detail-spec-label">Gestão de Rede</span>
+                                </div>
+                            </div>
+                            <div class="detail-spec-item">
+                                <svg class="detail-spec-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2">
+                                    <path d="M12 2v20M2 12h20"></path>
+                                </svg>
+                                <div>
+                                    <span class="detail-spec-text">32 Pontos</span>
+                                    <span class="detail-spec-label">Conexões</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="detail-actions">
+                            <a href="/produto/6/genius" class="btn-primary">Detalhes</a>
+                        </div>
+                    </div>
+                    <div class="detail-image-col">
+                        <div class="detail-image-container">
+                            <span class="detail-badge">Custo-Efetivo</span>
+                            <img src="https://www.powertomove.pt/images/artigos/normal/1560502752.genius.jpg"
+                                alt="Genius" class="detail-image">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 3: Public -->
+                <div class="product-detail-row">
+                    <div class="detail-image-col">
+                        <div class="detail-image-container">
+                            <span class="detail-badge">Universal</span>
+                            <img src="https://www.powertomove.pt/images/artigos/normal/1560503859.public.jpg"
+                                alt="Public" class="detail-image">
+                        </div>
+                    </div>
+                    <div class="detail-content-col">
+                        <span class="detail-subtitle">Espaços Públicos</span>
+                        <h2 class="detail-title">Public</h2>
+                        <p class="detail-desc">Estações robustas e antivandalismo, preparadas para serem integradas em
+                            qualquer rede pública de carregamento. Gestão eficiente de energia e pagamentos.</p>
+
+                        <div class="detail-specs">
+                            <div class="detail-spec-item">
+                                <svg class="detail-spec-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2">
+                                    <circle cx="12" cy="12" r="10"></circle>
+                                    <line x1="2" y1="12" x2="22" y2="12"></line>
+                                    <path
+                                        d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z">
+                                    </path>
+                                </svg>
+                                <div>
+                                    <span class="detail-spec-text">Multi-Rede</span>
+                                    <span class="detail-spec-label">Compatibilidade</span>
+                                </div>
+                            </div>
+                            <div class="detail-spec-item">
+                                <svg class="detail-spec-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2">
+                                    <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+                                </svg>
+                                <div>
+                                    <span class="detail-spec-text">Resistente</span>
+                                    <span class="detail-spec-label">Uso Intensivo</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="detail-actions">
+                            <a href="/produto/15/public" class="btn-primary">Detalhes</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+
+
+        <!-- Footer -->
+        <footer>
+            <div class="footer-inner">
+                <div class="footer-grid">
+                    <div class="footer-col brand-col">
+                        <div class="logo-box footer-logo-box">
+                            <div class="logo-pill">
+                                <div class="logo-waves"></div>
+                            </div>
+                            <div class="logo-brand">
+                                <span>power</span>
+                                <span>to move</span>
+                            </div>
+                        </div>
+                        <p class="footer-proposal">Lideramos o caminho para uma mobilidade sustentável e inteligente. Do
+                            residencial ao ultra-rápido, movemos o seu futuro.</p>
+                    </div>
+                    <div class="footer-col links-col">
+                        <div class="footer-col-title">PAGES</div>
+                        <ul class="footer-links">
+                            <li><a href="index.html">Início</a></li>
+                            <li><a href="produtos.html">Produtos</a></li>
+                            <li><a href="about-us.html">Sobre Nós</a></li>
+                            <li><a href="index.html#footer">Contactos</a></li>
+                        </ul>
+                    </div>
+
+                </div>
+                <div class="footer-bottom">
+                    <span class="footer-copy">© 2026 Power to Move · Todos os direitos reservados.</span>
+                    <div class="footer-socials">
+                        <a href="#" class="footer-social">
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                                <path
+                                    d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z" />
+                            </svg>
+                        </a>
+                        <a href="#" class="footer-social">
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                                <path
+                                    d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" />
+                            </svg>
+                        </a>
+                        <a href="#" class="footer-social">
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2">
+                                <rect x="2" y="2" width="20" height="20" rx="5" ry="5" />
+                                <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z" />
+                                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <script src="js/main.js"></script>
 </body>
 
 </html>
