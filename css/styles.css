@@ -440,7 +440,8 @@ hr {
    color: #fff;
    opacity: 0.9;
    max-width: 600px;
-   line-height: 1.7
+   line-height: 1.7;
+   overflow-wrap: break-word;
 }
 
 /* ===========================
